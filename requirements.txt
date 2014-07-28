@@ -3,4 +3,4 @@ beautifulsoup4==4.3.2
 ez-setup==0.9
 gunicorn==19.1.0
 tweepy==2.3.0
-twittcher==0.1.06
+git+git://github.com/Zulko/twittcher.git
