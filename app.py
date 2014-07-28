@@ -33,6 +33,6 @@ celery = Celery(__name__, broker=REDIS_URL)
 bot = SearchWatcher("is it friday yet?", action=tweet_back)
 
 
-@periodic_task(run_every=timedelta(minutes=30))
+@periodic_task(run_every=timedelta(minutes=5))
 def check_tweets():
     bot.watch()
